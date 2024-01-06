@@ -1,5 +1,3 @@
-url = "https://owenkruse.click";
-
 function fetchData(url) {
     let _type = "POST";
     let _url = url + "/api/ajax-actions.php";
@@ -19,4 +17,4 @@ function fetchData(url) {
     );
 }
 
-fetchData(url)
+fetchData("https://owenkruse.click")
